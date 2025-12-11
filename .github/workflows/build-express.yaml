@@ -1,4 +1,4 @@
-name: Build and Push Docker Image
+ressname: Build and Push Docker Image
 
 on:
   push:
@@ -27,4 +27,4 @@ jobs:
       with:
         context: ./express-app
         push: true
-        tags: ${{ secrets.DOCKER_USERNAME }}/beermapping:latest
+        tags: ${{ secrets.DOCKER_USERNAME }}/docker-hy-express:latest
